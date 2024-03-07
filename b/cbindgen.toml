@@ -1,0 +1,13 @@
+language = "C"
+
+pragma_once = true
+usize_is_size_t = true
+include_version = true
+no_includes = true
+
+sys_includes = ["stdint.h", "stdlib.h"]
+
+[parse]
+clean = true
+parse_deps = true
+include = ["a", "b"]

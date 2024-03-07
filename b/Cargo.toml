@@ -1,0 +1,18 @@
+[package]
+name = "b"
+version = "0.1.0"
+edition = "2021"
+
+# [lib]
+# # # crate-type = ["cdylib", "rlib"]
+# # # crate-type = ["cdylib"]
+# # crate-type = ["dylib"]
+# # crate-type = ["lib", "staticlib", "cdylib"]
+# crate-type = ["lib", "staticlib"]
+
+[dependencies]
+a = { path = "../a" }
+
+[build-dependencies]
+cbindgen = "0.26.0"
+env_logger = "0.11.3"
